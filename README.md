@@ -4,8 +4,8 @@ Bower Component for a [Angularjs](https://angularjs.org/) service to provide aut
 
 
 ## Usage
-1. `bower install angular-markdown-directive`
-2. Include `angular-markdown-directive.js`. It should be located at `bower_components/angular-markdown-directive/`.
+1. `bower install my-oauth-restangular`
+2. Include `my-oauth-restangular.js`. It should be located at `bower_components/my-oauth-restangular/`.
 3. Add `my.server` as a module dependency to your app:
 
 ```javascript
