@@ -1,4 +1,4 @@
-# angular-markdown-directive 
+# angular-markdown-directive [![Build Status](https://travis-ci.org/yannikmesserli/my-oauth-restangular.png)](https://travis-ci.org/yannikmesserli/my-oauth-restangular)
 
 Bower Component for a [Angularjs](https://angularjs.org/) service to provide authentification Oauth functions on top of [Restangular](https://github.com/mgonto/restangular).
 
