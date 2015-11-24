@@ -1,0 +1,15 @@
+{
+  "name": "my-oauth-restangular",
+  "version": "0.0.1",
+  "main": "my-oauth-restangular.js",
+  "dependencies": {
+    "angular": "*",
+    "angular-resource": "*",
+    "angular-cookies": "*",
+    "lodash": "*",
+    "restangular": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "angular-markdown-directive",
+  "version": "0.3.1",
+  "description": "simple Restangular wrapper service with Oauth 2 method implemented",
+  "main": "my-oauth-restangular.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yannikmesserli/my-oauth-restangular.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "restangular",
+    "oauth",
+    "authentification"
+  ],
+  "author": "Yannik Messerli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yannikmesserli/my-oauth-restangular/issues"
+  },
+  "homepage": "https://github.com/yannikmesserli/my-oauth-restangular",
+  "devDependencies": {
+    "karma": "^0.12.9",
+    "karma-jasmine": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-chrome-launcher": "^0.1.3"
+  }
+}
