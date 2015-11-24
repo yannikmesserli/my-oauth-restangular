@@ -46,6 +46,5 @@ var app = angular.module('yourApp', [
 }]);
 ```
 
-
 ## License
 MIT
