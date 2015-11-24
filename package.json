@@ -1,5 +1,5 @@
 {
-  "name": "angular-markdown-directive",
+  "name": "my-oauth-restangular",
   "version": "0.3.1",
   "description": "simple Restangular wrapper service with Oauth 2 method implemented",
   "main": "my-oauth-restangular.js",
