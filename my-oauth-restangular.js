@@ -33,7 +33,7 @@
         o.setBaseUrl = function(base_url){
             BASE_URL = base_url;
         }
-        o.setBaseUrl = function(token_path){
+        o.setTokenPath = function(token_path){
             TOKEN_PATH = token_path;
         }
 
