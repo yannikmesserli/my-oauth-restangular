@@ -15,7 +15,7 @@
 
         // Private vars:
         var LOGIN_LOCATION = 'login', NOT_FOUND_LOCACTION = "error404",
-        CLIENT_ID = '', CLIENT_SECRET = '', BASE_URL = '', PORT = '';
+        CLIENT_ID = '', CLIENT_SECRET = '', BASE_URL = '', PORT = '', TOKEN_PATH = "token";
 
         o.setClientInfo = function(clientId, clientSecret){
             CLIENT_ID = clientId;
@@ -32,6 +32,9 @@
         }
         o.setBaseUrl = function(base_url){
             BASE_URL = base_url;
+        }
+        o.setBaseUrl = function(token_path){
+            TOKEN_PATH = token_path;
         }
 
 
@@ -51,7 +54,7 @@
                 throw new ServerException("Client id not set");
 
             // Interface for the provider:
-            var Server = function(clientId, clientSecret, login_view, base_url, port) {
+            var Server = function(clientId, clientSecret, login_view, base_url, port, token_path) {
 
                 if(port != "")
                     port = ":" + port;
@@ -142,7 +145,7 @@
                     var exec = s.one('oauth2')
                     .customPOST(
                         $.param(data), 
-                        'access_token', 
+                        token_path, 
                         undefined, 
                         {'Content-Type': "application/x-www-form-urlencoded; charset=UTF-8"}
                     );
@@ -166,7 +169,7 @@
 
             };
 
-            return Server(CLIENT_ID, CLIENT_SECRET, LOGIN_LOCATION, BASE_URL, PORT);
+            return Server(CLIENT_ID, CLIENT_SECRET, LOGIN_LOCATION, BASE_URL, PORT, TOKEN_PATH);
         }];
 
 
