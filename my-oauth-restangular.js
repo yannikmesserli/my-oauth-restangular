@@ -65,7 +65,7 @@
                 // if we get an authorize error:
                 var interceptor = function(response, promise) {
                     //console.log(response, promise)
-                    if ( response.status == 401) {
+                    if ( response.status == 401 || response.status == 403) {
                         $location.path(login_view);
                         //window.location = "#/login"
                         return false;
